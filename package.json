@@ -1,38 +1,37 @@
 {
-   "name": "chromehtml2pdf",
-   "version": "1.0.4",
-   "description": "Create PDFs from HTML files/web pages from the command line.",
-   "main": "index.js",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/dataverity/chromehtml2pdf"
-   },
-   "scripts": {
-      "lint:eslint": "eslint --fix",
-      "lint:stylelint": "stylelint --fix",
-      "lint:markdownlint": "markdownlint",
-      "lint:prettier": "prettier --write --loglevel warn"
-   },
-   "bin": {
-      "chromehtml2pdf": "./index.js"
-   },
-   "gitHooks": {
-      "pre-commit": "cross-env PRE_COMMIT=true lint-staged -d"
-   },
-   "dependencies": {
-      "commander": "^2.20.0",
-      "puppeteer": "^1.16.0"
-   },
-   "devDependencies": {
-      "cross-env": "7.x",
-      "prettier": "2.x",
-      "lint-staged": "11.x",
-      "eslint": "7.x",
-      "eslint-plugin-import": "2.x",
-      "eslint-plugin-node": "11.x",
-      "eslint-plugin-promise": "5.x",
-      "markdownlint-cli": "0.x"
-   },
-   "author": "DataVerity, Inc",
-   "license": "Apache-2.0"
+  "name": "chromehtml2pdf",
+  "version": "1.1.0",
+  "description": "Create PDFs from HTML files and web pages from the command line.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airsuite/chromehtml2pdf"
+  },
+  "scripts": {
+    "lint:eslint": "eslint --fix",
+    "lint:stylelint": "stylelint --fix",
+    "lint:prettier": "prettier --write --loglevel warn",
+    "test": "./tests/run.sh"
+  },
+  "bin": {
+    "chromehtml2pdf": "./index.js"
+  },
+  "gitHooks": {
+    "pre-commit": "cross-env PRE_COMMIT=true lint-staged -d"
+  },
+  "dependencies": {
+    "commander": "^8.1.0",
+    "puppeteer": "^10.2.0"
+  },
+  "devDependencies": {
+    "cross-env": "7.x",
+    "prettier": "2.x",
+    "lint-staged": "11.x",
+    "eslint": "7.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-node": "11.x",
+    "eslint-plugin-promise": "5.x"
+  },
+  "author": "DataVerity, Inc. & AirSuite Inc.",
+  "license": "Apache-2.0"
 }

@@ -6,27 +6,22 @@ It is meant to basically be a drop-in replacement for wkhtmltopdf or other comma
 
 This can be called from programming languages such as Python, PHP, Java, etc., with appropriate command line arguments to facilitate automated PDF creation from HTML pages.
 
-## Installation
-
-See https://www.npmjs.com/package/chromehtml2pdf
 
 ## Usage
 
 Once installed, simple command line usage is:
 
-chromehtml2pdf --out=out.pdf https://wikipedia.org
+`chromehtml2pdf --out=out.pdf https://wikipedia.org`
 
 to generate a PDF of that web page.
 
 For local files use:
 
-chromehtml2pdf --out=out.pdf file:///path/to/file/file.htm
+`chromehtml2pdf --out=out.pdf file:///path/to/file/file.htm`
 
 There are a number of optional arguments for how to print (margins, page sizes, orientation, header/footer, etc.). To see all of the options, once installed type
 
-chromehtml2pdf --help
-
-This has been tested on Linux Ubuntu ^14.04.
+`chromehtml2pdf --help`
 
 ## Known Issues
 
@@ -39,4 +34,3 @@ If you want something that can be used for all users on a system, then you can:
 1. Pass --executablePath with some path to chrome/chromium that all users can run.
 
 2. Change the permissions of the chrome installation that is in puppeteer. Currently, this is stored in <installation dir>/node_modules/puppeteer/.local-chromium/.
-
