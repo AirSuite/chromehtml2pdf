@@ -45,6 +45,8 @@ const action = function (file) {
   console.log(`Converting file ${file} to ${config.out}.`);
   console.log(config);
 
+  config.timeout = config.timeout > 0 ? config.timeout : 120000;
+
   // Adjust configuration parameter names to what puppeteer expects
   config.path = config.out;
 

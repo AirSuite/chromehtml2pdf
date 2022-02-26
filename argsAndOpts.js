@@ -9,6 +9,7 @@ program.option(
   'Scale of the webpage rendering. Defaults to 1 and is limited between 0.1 and 2.',
   parseFloat
 );
+program.option('--timeout <number>', 'How long we will wait for the PDF to be generated', parseInt);
 program.option('--width <number>', 'Paper width with units. Defaults to 8.5in.');
 program.option('--height <number>', 'Paper height with units. Defaults to 11in.');
 
